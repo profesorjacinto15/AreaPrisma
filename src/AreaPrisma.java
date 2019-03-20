@@ -3,6 +3,8 @@ import javax.swing.*;
 /**
  * Clase AreaPrisma
  *
+ * Calcula el area de prisma de base triangular
+ *
  */
 
 public class AreaPrisma {
