@@ -50,8 +50,8 @@ public class AreaPrisma {
 
     /**
      * Imprime un valor
-     * @param mensa
-     * @param valor
+     * @param mensa mensaje mostrar
+     * @param valor a mostrar
      */
 
     public static void imprimirValor (String mensa, String valor) {
