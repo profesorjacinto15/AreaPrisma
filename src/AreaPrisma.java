@@ -102,7 +102,7 @@ public class AreaPrisma {
     /**
      * Calcula el perimetro
      * @param baseTriangulo
-     * @return
+     * @return el perimetro
      */
 
     public static double perimetro (double baseTriangulo) {
@@ -113,7 +113,7 @@ public class AreaPrisma {
      * Calcula el area lateral del prisma
      * @param perimetro
      * @param alturaPrisma
-     * @return
+     * @return area lateral del prisma
      */
 
     public static double areaLateral (double perimetro, double alturaPrisma) {
@@ -124,7 +124,7 @@ public class AreaPrisma {
      * Calcula el area del prisma
      * @param areaBase
      * @param areaLateral
-     * @return
+     * @return el area del Prisma
      */
 
     public static double areaTotal (double areaBase, double areaLateral) {
