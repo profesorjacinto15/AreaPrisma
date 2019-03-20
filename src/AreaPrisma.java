@@ -1,6 +1,16 @@
 import javax.swing.*;
 
+/**
+ * Clase AreaPrisma
+ *
+ */
+
 public class AreaPrisma {
+
+    /**
+     * Metodo principal cre ejecuta el programa.
+     * @param args
+     */
 
     public static void main (String [] args) {
         String aTotal;
@@ -19,6 +29,12 @@ public class AreaPrisma {
 
     }
 
+    /**
+     * Metodo que lee un double
+     * @param mensaje  a mostrar
+     * @return el valor introducido
+     */
+
     public static double leerValor (String mensaje) {
         String bas;
         double basing;
@@ -32,11 +48,23 @@ public class AreaPrisma {
 
     }
 
+    /**
+     * Imprime un valor
+     * @param mensa
+     * @param valor
+     */
+
     public static void imprimirValor (String mensa, String valor) {
 
         JOptionPane.showMessageDialog(null,mensa+valor);
 
     }
+
+    /**
+     * Metodo que comprueba que si el valor introducido es un numero
+     * @param nume valor introducido
+     * @return verdadero si es un numero y falso en caso contrario.
+     */
 
     public static boolean esNumero (String nume) {
         boolean resultado = true;
@@ -48,23 +76,56 @@ public class AreaPrisma {
         return resultado;
     }
 
+    /**
+     * Método que calcula la altura de la base triangular
+     * @param baseTriangulo la base del triango
+     * @return la altura del triangulo
+     */
+
     public static double alturaTriangulo (double baseTriangulo) {
         double alturatri;
         alturatri = ((Math.sqrt(3) * baseTriangulo)) / 2.0;
         return (float) alturatri;
     }
 
+    /**
+     * Calcula el area de la base del prisma
+     * @param baseTriangulo
+     * @param alturaTriangulo
+     * @return el area
+     */
+
     public static double areaBase (double baseTriangulo, double alturaTriangulo) {
         return (baseTriangulo * alturaTriangulo) / 2.0;
     }
+
+    /**
+     * Calcula el perimetro
+     * @param baseTriangulo
+     * @return
+     */
 
     public static double perimetro (double baseTriangulo) {
         return 3 * baseTriangulo;
     }
 
+    /**
+     * Calcula el area lateral del prisma
+     * @param perimetro
+     * @param alturaPrisma
+     * @return
+     */
+
     public static double areaLateral (double perimetro, double alturaPrisma) {
         return perimetro * alturaPrisma;
     }
+
+    /**
+     * Calcula el area del prisma
+     * @param areaBase
+     * @param areaLateral
+     * @return
+     */
 
     public static double areaTotal (double areaBase, double areaLateral) {
         return 2 * areaBase + areaLateral;
